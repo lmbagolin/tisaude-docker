@@ -1,0 +1,1529 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2023-03-18T19:17:12.932Z",
+    "__export_source": "insomnia.desktop.app:v2023.1.0",
+    "resources": [
+        {
+            "_id": "req_f4c9532a747c4e12be8e99605b6191fe",
+            "parentId": "fld_d60a2322877d44bdaace04927f0bbe32",
+            "modified": 1679018124859,
+            "created": 1679005109801,
+            "url": "{{URL}}/api/auth/login",
+            "name": "Login",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"email\": \"{{email}}\",\n\t\"password\": \"{{password}}\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_b411d5029bb948289a7603d4b615b491"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1679005109801,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_d60a2322877d44bdaace04927f0bbe32",
+            "parentId": "wrk_fe0981d69748435993f93dd8af1b99da",
+            "modified": 1679017623152,
+            "created": 1679017623152,
+            "name": "Auth",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1679017623152,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_fe0981d69748435993f93dd8af1b99da",
+            "parentId": null,
+            "modified": 1679017658501,
+            "created": 1679005098124,
+            "name": "TiSaude Endpoints",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_40e0b1c774ab4846939c19602edb29df",
+            "parentId": "fld_d60a2322877d44bdaace04927f0bbe32",
+            "modified": 1679017627154,
+            "created": 1679015204837,
+            "url": "{{URL}}/api/auth/logout",
+            "name": "Logout",
+            "description": "",
+            "method": "POST",
+            "body": { "mimeType": "application/json", "text": "" },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679005109751,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_40aba9fd24144652b137810c4d0a4ffb",
+            "parentId": "fld_403c6807b60e4c03afef172493aa98f8",
+            "modified": 1679017757099,
+            "created": 1679017684886,
+            "url": "{{URL}}/api/specialties",
+            "name": "Index",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679017684886,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_403c6807b60e4c03afef172493aa98f8",
+            "parentId": "wrk_fe0981d69748435993f93dd8af1b99da",
+            "modified": 1679017680195,
+            "created": 1679017670732,
+            "name": "Especialidades",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1679017623102,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_7e187e610dd74343afa17f0d7e5ed168",
+            "parentId": "fld_403c6807b60e4c03afef172493aa98f8",
+            "modified": 1679087834340,
+            "created": 1679087823503,
+            "url": "{{URL}}/api/specialties/1",
+            "name": "Show",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679011397343.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_9b2c3537401c45549abc8672a5520f8d",
+            "parentId": "fld_403c6807b60e4c03afef172493aa98f8",
+            "modified": 1679087894792,
+            "created": 1679087843824,
+            "url": "{{URL}}/api/specialties",
+            "name": "Create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"Pediatria\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679008253572.25,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_ea0917323662433db6b67bea1bc751e9",
+            "parentId": "fld_403c6807b60e4c03afef172493aa98f8",
+            "modified": 1679087954737,
+            "created": 1679087936957,
+            "url": "{{URL}}/api/specialties/1",
+            "name": "Update",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"Pediatria\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679006681686.625,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_b9af38ae7ad24ae5ae9594c78399d5f9",
+            "parentId": "fld_403c6807b60e4c03afef172493aa98f8",
+            "modified": 1679087979613,
+            "created": 1679087964397,
+            "url": "{{URL}}/api/specialties/1",
+            "name": "Delete",
+            "description": "",
+            "method": "DELETE",
+            "body": { "mimeType": "application/json", "text": "" },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679005895743.8125,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_abe2a1fe85294aceb1ad64315af04b24",
+            "parentId": "fld_08f3172202fe49d3930f6ba10fc84e1a",
+            "modified": 1679088166294,
+            "created": 1679088145489,
+            "url": "{{URL}}/api/doctors",
+            "name": "Index",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679017684886,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_08f3172202fe49d3930f6ba10fc84e1a",
+            "parentId": "wrk_fe0981d69748435993f93dd8af1b99da",
+            "modified": 1679088145488,
+            "created": 1679088145488,
+            "name": "Medicos",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1679017623052,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_81381901070c4524ba2a408c2cad6d04",
+            "parentId": "fld_08f3172202fe49d3930f6ba10fc84e1a",
+            "modified": 1679146693063,
+            "created": 1679088145490,
+            "url": "{{URL}}/api/doctors/1",
+            "name": "Show",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679011397343.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_4a9e3cce6ee24d5b9cdc9a4616581dc1",
+            "parentId": "fld_08f3172202fe49d3930f6ba10fc84e1a",
+            "modified": 1679145117766,
+            "created": 1679088145490,
+            "url": "{{URL}}/api/doctors",
+            "name": "Create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"J. K. Rowling\",\n\t\"crm\": \"SC-9988\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679008253572.25,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_4ae940e9696a40cea4eac162f964af2d",
+            "parentId": "fld_08f3172202fe49d3930f6ba10fc84e1a",
+            "modified": 1679145139174,
+            "created": 1679088145491,
+            "url": "{{URL}}/api/doctors/1",
+            "name": "Update",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"Machado de Assis\",\n\t\"crm\": \"SC-12345\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679006681686.625,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_391afdfdf24e4f90bfc050d1d033c656",
+            "parentId": "fld_08f3172202fe49d3930f6ba10fc84e1a",
+            "modified": 1679088253652,
+            "created": 1679088145492,
+            "url": "{{URL}}/api/doctors/1",
+            "name": "Delete",
+            "description": "",
+            "method": "DELETE",
+            "body": { "mimeType": "application/json", "text": "" },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679005895743.8125,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_5d8844cdc176493f813422cc935ef5d8",
+            "parentId": "fld_08f3172202fe49d3930f6ba10fc84e1a",
+            "modified": 1679148363907,
+            "created": 1679146239727,
+            "url": "{{URL}}/api/doctors/1/add-specialties",
+            "name": "Add Especialidades",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"specialty_ids\": [1, 2, 3]\n}"
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679005895693.8125,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_cf94751f866945509490d8bd91b1e37a",
+            "parentId": "fld_08f3172202fe49d3930f6ba10fc84e1a",
+            "modified": 1679148354482,
+            "created": 1679147867490,
+            "url": "{{URL}}/api/doctors/1/remove-specialty",
+            "name": "Remove Especialidade",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"specialty_id\": 3\n\t\n}"
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679005502747.4062,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_60342b992dd145f6ab84bdaa4780adec",
+            "parentId": "fld_08f3172202fe49d3930f6ba10fc84e1a",
+            "modified": 1679150261096,
+            "created": 1679150251497,
+            "url": "{{URL}}/api/doctors/1/appointments",
+            "name": "Consultas",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679005502697.4062,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_4b0040f7a18f48bcb2d1ca3b9f1ea268",
+            "parentId": "fld_b4382d9c11f1450d801cd0819ef3cfd1",
+            "modified": 1679088281907,
+            "created": 1679088266208,
+            "url": "{{URL}}/api/pacients",
+            "name": "Index",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679017684886,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_b4382d9c11f1450d801cd0819ef3cfd1",
+            "parentId": "wrk_fe0981d69748435993f93dd8af1b99da",
+            "modified": 1679088266206,
+            "created": 1679088266206,
+            "name": "Pacientes",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1679017623002,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_9eff9e4a397846bc80a54a53314f9aa4",
+            "parentId": "fld_b4382d9c11f1450d801cd0819ef3cfd1",
+            "modified": 1679088284405,
+            "created": 1679088266209,
+            "url": "{{URL}}/api/pacients/1",
+            "name": "Show",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679011397343.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_74f9afea756643209fd06c12a37a7c42",
+            "parentId": "fld_b4382d9c11f1450d801cd0819ef3cfd1",
+            "modified": 1679145193408,
+            "created": 1679088266208,
+            "url": "{{URL}}/api/pacients",
+            "name": "Create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"Lazaro Ramos\",\n\t\"birthday\": \"1979-11-01\",\n\t\"phones\": [\"(48) 9 9999-1234\", \"(48) 9 9888-4321\"]\t\n}"
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679008253572.25,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_2b0d0e546c634fd5a9fe746cccb5db92",
+            "parentId": "fld_b4382d9c11f1450d801cd0819ef3cfd1",
+            "modified": 1679145276991,
+            "created": 1679088266210,
+            "url": "{{URL}}/api/pacients/1",
+            "name": "Update",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"Tom Cruise\",\n\t\"birthday\": \"1962-07-03\",\n\t\"phones\": null\n}"
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679006681686.625,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_831609f8f2b64f0aa671c339681b5338",
+            "parentId": "fld_b4382d9c11f1450d801cd0819ef3cfd1",
+            "modified": 1679088292949,
+            "created": 1679088266210,
+            "url": "{{URL}}/api/pacients/1",
+            "name": "Delete",
+            "description": "",
+            "method": "DELETE",
+            "body": { "mimeType": "application/json", "text": "" },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679005895743.8125,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_24eb7fdb18b1453dbc1aac58efc6aa96",
+            "parentId": "fld_ab5b6b08242c4a9d805e8c7b26f547e9",
+            "modified": 1679153469838,
+            "created": 1679153457908,
+            "url": "{{URL}}/api/pacients-health-plan",
+            "name": "Index",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679017684886,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_ab5b6b08242c4a9d805e8c7b26f547e9",
+            "parentId": "wrk_fe0981d69748435993f93dd8af1b99da",
+            "modified": 1679153457907,
+            "created": 1679153457907,
+            "name": "Pacientes Planos de Saúde",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1679017622977,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_592bfca6e89d4befbeb70e479f263988",
+            "parentId": "fld_ab5b6b08242c4a9d805e8c7b26f547e9",
+            "modified": 1679153473432,
+            "created": 1679153457910,
+            "url": "{{URL}}/api/pacients-health-plan/1",
+            "name": "Show",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679011397343.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_363910697f0d4abfadd635beb49b9700",
+            "parentId": "fld_ab5b6b08242c4a9d805e8c7b26f547e9",
+            "modified": 1679153708825,
+            "created": 1679153457909,
+            "url": "{{URL}}/api/pacients-health-plan",
+            "name": "Create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"pacient_id\": 1,\n\t\"health_plan_id\": 1,\n\t\"contract_id\": \"AG-1995113-2023\",\n\t\"joined_at\": \"2023-01-01\",\n\t\"expire_at\": \"2023-11-01\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679008253572.25,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_9df32f37aaee4ce08622e6d299e0f407",
+            "parentId": "fld_ab5b6b08242c4a9d805e8c7b26f547e9",
+            "modified": 1679158460124,
+            "created": 1679153457911,
+            "url": "{{URL}}/api/pacients-health-plan/1",
+            "name": "Update",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"contract_id\": \"AG-1995113-2023\",\n\t\"joined_at\": \"2023-01-01\",\n\t\"expire_at\": \"2023-11-01\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679006681686.625,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_2000f79848834f259c02e0eefb77a88e",
+            "parentId": "fld_ab5b6b08242c4a9d805e8c7b26f547e9",
+            "modified": 1679153482025,
+            "created": 1679153457911,
+            "url": "{{URL}}/api/pacients-health-plan/1",
+            "name": "Delete",
+            "description": "",
+            "method": "DELETE",
+            "body": { "mimeType": "application/json", "text": "" },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679005895743.8125,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_4475570548564b0db1fe70e9edb1a4d0",
+            "parentId": "fld_eb060aff89794eaf9b35ee3690d2a987",
+            "modified": 1679089562499,
+            "created": 1679089236714,
+            "url": "{{URL}}/api/procedures",
+            "name": "Index",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679017684886,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_eb060aff89794eaf9b35ee3690d2a987",
+            "parentId": "wrk_fe0981d69748435993f93dd8af1b99da",
+            "modified": 1679089236713,
+            "created": 1679089236713,
+            "name": "Procedimentos",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1679017622952,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_0e8d4312f21c4a939adcd962cb9a918b",
+            "parentId": "fld_eb060aff89794eaf9b35ee3690d2a987",
+            "modified": 1679089289321,
+            "created": 1679089236715,
+            "url": "{{URL}}/api/procedures/1",
+            "name": "Show",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679011397343.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_5dcc2b9a0e6e4e29a244dbeca8f88dce",
+            "parentId": "fld_eb060aff89794eaf9b35ee3690d2a987",
+            "modified": 1679089406506,
+            "created": 1679089236715,
+            "url": "{{URL}}/api/procedures",
+            "name": "Create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"Terapia imunobiológica intravenosa\",\n\t\"price\": \"1000\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679008253572.25,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_95713a2a4fdd4a3c8af57fff57ac9175",
+            "parentId": "fld_eb060aff89794eaf9b35ee3690d2a987",
+            "modified": 1679145329876,
+            "created": 1679089236716,
+            "url": "{{URL}}/api/procedures/1",
+            "name": "Update",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"ELETROCARDIOGRAMA (EEG)\",\n\t\"price\": 17.8\n}"
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679006681686.625,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_9dfc18f1c8474ae0a5311760c62232b2",
+            "parentId": "fld_eb060aff89794eaf9b35ee3690d2a987",
+            "modified": 1679089298151,
+            "created": 1679089236716,
+            "url": "{{URL}}/api/procedures/1",
+            "name": "Delete",
+            "description": "",
+            "method": "DELETE",
+            "body": { "mimeType": "application/json", "text": "" },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679005895743.8125,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_ad4a61e3a8a94bd6b46cd259d9ccee7c",
+            "parentId": "fld_6668e01d2a5d4666890d170dd27b9f48",
+            "modified": 1679089829407,
+            "created": 1679089759559,
+            "url": "{{URL}}/api/appointments",
+            "name": "Index",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679017684886,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_6668e01d2a5d4666890d170dd27b9f48",
+            "parentId": "wrk_fe0981d69748435993f93dd8af1b99da",
+            "modified": 1679089759558,
+            "created": 1679089759558,
+            "name": "Consultas",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1679017622927,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_3f0cb4ec7da84949b9d8d34bb74c419f",
+            "parentId": "fld_6668e01d2a5d4666890d170dd27b9f48",
+            "modified": 1679089832116,
+            "created": 1679089759559,
+            "url": "{{URL}}/api/appointments/1",
+            "name": "Show",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679011397343.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_449a590d2c99439da1dcfd82800e9ca8",
+            "parentId": "fld_6668e01d2a5d4666890d170dd27b9f48",
+            "modified": 1679159510551,
+            "created": 1679089759560,
+            "url": "{{URL}}/api/appointments",
+            "name": "Create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"pacient_id\": 1,\n\t\"doctor_id\": 1,\n\t\"pacient_health_plan_id\": null,\n\t\"date\": \"2023-04-25 16:00\",\n\t\"is_private\": true\n}"
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679008253572.25,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_4d02387676764028868f5c6f1b03f050",
+            "parentId": "fld_6668e01d2a5d4666890d170dd27b9f48",
+            "modified": 1679160807737,
+            "created": 1679089759561,
+            "url": "{{URL}}/api/appointments/1",
+            "name": "Update",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"pacient_id\": 1,\n\t\"doctor_id\": 1,\n\t\"pacient_health_plan_id\": 1,\n\t\"date\": \"2023-03-25 16:00\",\n\t\"is_private\": true\n}"
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679006681686.625,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_d7713a938e28492b9608e2cab459dfa2",
+            "parentId": "fld_6668e01d2a5d4666890d170dd27b9f48",
+            "modified": 1679089839836,
+            "created": 1679089759562,
+            "url": "{{URL}}/api/appointments/1",
+            "name": "Delete",
+            "description": "",
+            "method": "DELETE",
+            "body": { "mimeType": "application/json", "text": "" },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679005895743.8125,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_145bb0a4d43b4e0f8dd71e1936777c2a",
+            "parentId": "fld_6668e01d2a5d4666890d170dd27b9f48",
+            "modified": 1679162189312,
+            "created": 1679162165276,
+            "url": "{{URL}}/api/appointments/1/add-procedures",
+            "name": "Add Procedimento",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"procedures_ids\": [1, 2, 3]\n}"
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679005895693.8125,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_86d58fdec554422c95ca29704d3b3559",
+            "parentId": "fld_6668e01d2a5d4666890d170dd27b9f48",
+            "modified": 1679162432745,
+            "created": 1679162299754,
+            "url": "{{URL}}/api/appointments/1/remove-procedure",
+            "name": "Remove Procedimento",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"procedure_id\": 1\n}"
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679005699220.6094,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_8640417c85e3446ea78a840e447c5508",
+            "parentId": "fld_0430f03a29f840fba785eaa87eab596f",
+            "modified": 1679089574623,
+            "created": 1679089500225,
+            "url": "{{URL}}/api/health-plans",
+            "name": "Index",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679017684886,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_0430f03a29f840fba785eaa87eab596f",
+            "parentId": "wrk_fe0981d69748435993f93dd8af1b99da",
+            "modified": 1679089500224,
+            "created": 1679089500224,
+            "name": "Planos de Saúde",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1679017622902,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_912a730fd9b548f3abe74f21a73f8a26",
+            "parentId": "fld_0430f03a29f840fba785eaa87eab596f",
+            "modified": 1679089590638,
+            "created": 1679089500226,
+            "url": "{{URL}}/api/health-plans/1",
+            "name": "Show",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679011397343.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_a9c1553d8cc04cdda12ddfb3828c37d3",
+            "parentId": "fld_0430f03a29f840fba785eaa87eab596f",
+            "modified": 1679145377986,
+            "created": 1679089500227,
+            "url": "{{URL}}/api/health-plans",
+            "name": "Create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"description\": \"Meu Novo Plano de Saúde\",\n\t\"phone\": null\n}"
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679008253572.25,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_1aadb9f47a3b4721a2d7efa6c17231d3",
+            "parentId": "fld_0430f03a29f840fba785eaa87eab596f",
+            "modified": 1679145391561,
+            "created": 1679089500227,
+            "url": "{{URL}}/api/health-plans/1",
+            "name": "Update",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"description\": \"SulAmérica Saúde\",\n\t\"phone\": null\n}"
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679006681686.625,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_48f6d03286ef45efa0e4b8b642c79b89",
+            "parentId": "fld_0430f03a29f840fba785eaa87eab596f",
+            "modified": 1679089665881,
+            "created": 1679089500228,
+            "url": "{{URL}}/api/health-plans/1",
+            "name": "Delete",
+            "description": "",
+            "method": "DELETE",
+            "body": { "mimeType": "application/json", "text": "" },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/json" }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{token}}",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1679005895743.8125,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_ef759a4a7a42c52c1d3c8a334127902e198630cd",
+            "parentId": "wrk_fe0981d69748435993f93dd8af1b99da",
+            "modified": 1679005098126,
+            "created": 1679005098126,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1679005098126,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_ef759a4a7a42c52c1d3c8a334127902e198630cd",
+            "parentId": "wrk_fe0981d69748435993f93dd8af1b99da",
+            "modified": 1679005098127,
+            "created": 1679005098127,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_dd63ef2f22744f43a651f79d6ffa9cf2",
+            "parentId": "wrk_fe0981d69748435993f93dd8af1b99da",
+            "modified": 1679005098125,
+            "created": 1679005098125,
+            "fileName": "Auth",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        },
+        {
+            "_id": "env_247cce07029c440cb0cdc674b43ddaac",
+            "parentId": "env_ef759a4a7a42c52c1d3c8a334127902e198630cd",
+            "modified": 1679018114619,
+            "created": 1679005317047,
+            "name": "TiSaude",
+            "data": {
+                "URL": "http://localhost",
+                "email": "user@tisaude.com.br",
+                "password": "tisaude123@",
+                "token": "{% response 'body', 'req_f4c9532a747c4e12be8e99605b6191fe', 'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'never', 60 %}"
+            },
+            "dataPropertyOrder": { "&": ["URL", "email", "password", "token"] },
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1679005317047,
+            "_type": "environment"
+        }
+    ]
+}

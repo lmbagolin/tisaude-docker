@@ -30,8 +30,8 @@ acordo com as suas configurações. Caso você não esteja usando a senha padrã
 4. Execute o comando <code>docker ps</code> para ter certeza que os containers do docker estão funcionando corretamente.
 5. Se ao acessar http://localhost e http://localhost/swagger e tiver tudo ok, seu sistema está rodando corretamente.
 
-Os arquivos do Insomnia estão no projeto tisaude-api/TiSaude-Insomnia-Request.json
+Os arquivos do Insomnia estão no projeto TiSaude-Insomnia-Request.json
 
-O ER do sistema esta no projeto tisaude-docker/ER.png
+O ER do sistema esta no projeto <a ref="https://github.com/lmbagolin/tisaude-docker/TiSaude-Insomnia-Request.json">tisaude-docker/ER.png</a>
 
 <img src="https://github.com/lmbagolin/tisaude-docker/blob/main/ER.png" />
