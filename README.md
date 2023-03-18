@@ -22,8 +22,9 @@ https://github.com/lmbagolin/tisaude-docker
 ```
 
 ```
-Ps: se você a tiver uma imagem do laradock em sua máquina, verifique se a senha do MySql está de acordo com as suas configurações.
-Caso você não esteja usando a senha padrão, abra o arquivo <code>./bootstrap.sh</code> e na linha 25 altere a senha.
+Ps: se você a tiver uma imagem do laradock em sua máquina, verifique se a senha do MySql está de
+acordo com as suas configurações.
+Caso você não esteja usando a senha padrão, abra o arquivo ./bootstrap.sh e na linha 25 altere a senha.
 ```
 
 4. Execute o comando <code>docker ps</code> para ter certeza que os containers do docker estão funcionando corretamente.
