@@ -33,3 +33,5 @@ acordo com as suas configurações. Caso você não esteja usando a senha padrã
 Os arquivos do Insomnia estão no projeto tisaude-api/TiSaude-Insomnia-Request.json
 
 O ER do sistema esta no projeto tisaude-docker/ER.png
+
+<img src="https://github.com/lmbagolin/tisaude-docker/blob/main/ER.png" />
