@@ -36,9 +36,13 @@ Para subir os containers execute o comando
 docker-compose up -d nginx mysql
 ```
 
+## Insomnia
+
 Os arquivos do Insomnia estão no projeto TiSaude-Insomnia-Request.json
+<code>https://github.com/lmbagolin/tisaude-docker/blob/main/TiSaude-Insomnia-Request.json</code>
+
+## ER
 
 O ER do sistema esta no projeto tisaude-docker/ER.png
-<code>https://github.com/lmbagolin/tisaude-docker/TiSaude-Insomnia-Request.json</code>
 
 <img src="https://github.com/lmbagolin/tisaude-docker/blob/main/ER.png" />
