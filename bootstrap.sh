@@ -21,8 +21,11 @@ echo "Registrando WORKSPACE"
 WORKSPACE_NAME=`docker ps --format "{{.Names}}" --filter ancestor=tisaude_workspace`
 WORKSPACE_MYSQL=`docker ps --format "{{.Names}}" --filter ancestor=tisaude_mysql`
 
+MYSQL_USER="root"
+MYSQL_PASS="root"
+
 echo "CRIANDO BD conselhos"
-docker exec -i ${WORKSPACE_MYSQL} /bin/sh -c 'mysql -u root -proot < ./docker-entrypoint-initdb.d/createdb.sql'
+docker exec -i ${WORKSPACE_MYSQL} /bin/sh -c 'mysql -u '${MYSQL_USER}' -p'${MYSQL_PASS}' < ./docker-entrypoint-initdb.d/createdb.sql'
 
 echo "Executando configurações e migrations da API"
 docker exec -i -w /var/www/tisaude-api ${WORKSPACE_NAME} composer install
