@@ -30,8 +30,9 @@ acordo com as suas configurações. Caso você não esteja usando a senha padrã
 4. Execute o comando <code>docker ps</code> para ter certeza que os containers do docker estão funcionando corretamente.
 5. Se ao acessar http://localhost e http://localhost/swagger e tiver tudo ok, seu sistema está rodando corretamente.
 
-```
 Ps: Para subir os containers execute o comando
+
+```
 docker-compose up -d nginx mysql
 ```
 
