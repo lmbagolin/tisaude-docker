@@ -22,7 +22,7 @@ https://github.com/lmbagolin/tisaude-docker
 ```
 
 ```
-Ps: se você a tiver uma imagem do laradock em sua máquina, verifique se a senha do MySql está de
+Obs: se você a tiver uma imagem do laradock em sua máquina, verifique se a senha do MySql está de
 acordo com as suas configurações. Caso você não esteja usando a senha padrão, abra o arquivo
 ./bootstrap.sh e na linha 25 altere a senha.
 ```
@@ -30,7 +30,7 @@ acordo com as suas configurações. Caso você não esteja usando a senha padrã
 4. Execute o comando <code>docker ps</code> para ter certeza que os containers do docker estão funcionando corretamente.
 5. Se ao acessar http://localhost e http://localhost/swagger e tiver tudo ok, seu sistema está rodando corretamente.
 
-Ps: Para subir os containers execute o comando
+Para subir os containers execute o comando
 
 ```
 docker-compose up -d nginx mysql
