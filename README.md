@@ -1,6 +1,6 @@
 ## Sobre o Projeto
 
-O projeto foi escrito com base no desafio encaminhado por email.
+O projeto foi escrito com base no desafio encaminhado por email. A Api foi desenvolvida usando o Laravel 8.75 e o ambiente onde a aplicação roda é usado o Laradock.
 
 Para rodar o projeto, siga os passos a seguir
 
